@@ -1,0 +1,5 @@
+#!/bin/bash
+
+curl https://animalhype.com/wp-content/uploads/2020/04/funny-baby-goat.jpg > goats.png
+aws s3 cp goats.png s3://ds2002-fhy9gs/
+aws s3 presign --expires-in 604800 s3://ds2002-fhy9gs/goats.png
