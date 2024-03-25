@@ -1,4 +1,5 @@
-#!/C:/Users/16073/AppData/Local/Microsoft/WindowsApps/python.exe
+#!/c/Users/16073/AppData/Local/Microsoft/WindowsApps/python3
+
 
 
 import os
@@ -7,10 +8,10 @@ os.environ["EYE_COLOR"] = "Blue"
 os.environ["FAV_COLOR"] = "Purple"
 os.environ["FAV_FOOTBALL"] = "Steelers"
 
-EYE_COLOR = input('What is your eye color?')
-FAV_COLOR = input('What is your favorite color?')
-FAV_FOOTBALL = input('What is your favorite football team?')
+os.environ["EYE_COLOR"] = input('What is your eye color?')
+os.environ["FAV_COLOR"] = input('What is your favorite color?')
+os.environ["FAV_FOOTBALL"] = input('What is your favorite football team?')
 
-print(EYE_COLOR)
-print(FAV_COLOR)
-print(FAV_FOOTBALL)
+print(os.getenv("EYE_COLOR"))
+print(os.getenv("FAV_COLOR"))
+print(os.getenv("FAV_FOOTBALL"))
